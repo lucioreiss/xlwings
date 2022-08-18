@@ -4841,7 +4841,7 @@ class Books(Collection):
         local=None,
         corrupt_load=None,
         json=None,
-    ):
+    ) -> xlwings.Book:
         """
         Opens a Book if it is not open yet and returns it. If it is already open,
         it doesn't raise an exception but simply returns the Book object.
